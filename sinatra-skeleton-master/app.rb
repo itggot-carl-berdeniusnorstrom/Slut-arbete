@@ -5,5 +5,12 @@ class App < Sinatra::Base
     erb :frontpage, layout: false
   end
 
+  get '/registration' do
+    erb :registration, layout: false
+  end
 
+  post '/register' do
+    username = params['username']
+
+  end
 end
