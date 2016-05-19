@@ -5,7 +5,7 @@ class Acount
   property :mail, String, required: true
   property :username, String, required: true
   property :fullname, String, required: true
-  property :date, Serial, required: true
+  property :date, Date, required: true
   property :password, BCryptHash, required: true
 
 
