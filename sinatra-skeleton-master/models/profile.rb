@@ -3,7 +3,7 @@ class Profile
 
     property :id, Serial
     property :name, String, required: true
-    property :picture, FilePath, required: true, default: '/grillkorv.png'
+    property :picture, FilePath, default: '/grillkorv.png'
 
   belongs_to :acount
   has n, :list, :through => Resource

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/layout.css">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <div id="profile-div">
+      <ul class="profile-select">
+      <li><div><a href="/crateprofile"><img class="profile-border" src="/img/blu-plus.jpg" alt="du suger" style="width:200px;height:200px;"></a></div></li>
+        <% for profile in @user.profiles %>
+          <li><div><a href="/listpage"><img class="profile-border" src="<%= profile.picture.to_s[7..-1] %>"></a></div></li>
+        <% end %>
+      </ul>
+    </div>
+  </body>
+</html>
